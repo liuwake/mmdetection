@@ -16,7 +16,7 @@ env_cfg = dict(
 
 vis_backends = [dict(type='LocalVisBackend'),
     dict(type='WandbVisBackend',
-    init_kwargs={"project": "mmdet", "name": "default"},
+    init_kwargs=dict(name='default', project='mmdet'),
     ),
 ]
 visualizer = dict(
